@@ -2,7 +2,7 @@
 
 ## Background
 
-From Alphabet Soup’s business team, our team has been provided a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. The dataset contains of columns that store metadata about each organization taht applied for fuunding. Our project is to use machine learning and neural networks to analyze the data and features included to create a binary classifier capable of predicting if an applicant will be successful in obtaining funding from Alphabet Soup.
+From Alphabet Soup’s business team, our team has been provided a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. The dataset contains of columns that store metadata about each organization that applied for fuunding. Our project is to use machine learning and neural networks to analyze the data and features included to create a binary classifier capable of predicting if an applicant will be successful in obtaining funding from Alphabet Soup.
 
 ## Project Deliverable 1: Preprocessing Data for a Neural Network Model
 ### The following preprocessing are to be completed on this dataset:
@@ -134,3 +134,58 @@ Loss = .57 Accuracy = 40.4%
 
 This ended up significantly worse, so we can impact the accuracy, I do not know how to shift it to an accuracy greater than 75%
 
+## Project Deliverable 4: Written Report on the Neural Network Model:
+
+### Purpose of this analysis.
+
+The purpose as states initially was to create a model for Alphabet Soup’s business team from data they provided in a csv file covering several years of applicaitons. Our project was comissioned to use machine learning and neural networks to analyze the data and features included to create a binary classifier capable of predicting if an applicant will be successful in obtaining funding from Alphabet Soup.
+
+Results: Using bulleted lists and images to support your answers, address the following questions.
+
+Data Preprocessing
+1) What variable(s) are considered the target(s) for your model?
+
+Target Variable - IS_SUCCESSFUL.
+
+![image](https://user-images.githubusercontent.com/91839403/160293388-2011dd0d-648e-4469-abe3-99c68b259e6f.png)
+
+What variable(s) are considered to be the features for your model?
+Features are shown in the image here:
+
+![image](https://user-images.githubusercontent.com/91839403/160293438-be81b083-401d-482d-9cb3-1a4db01c4742.png)
+
+What variable(s) are neither targets nor features, and should be removed from the input data?
+
+Variables removed were EIN & NAME, there were not deemed relevant to assessing the success of an application
+
+![image](https://user-images.githubusercontent.com/91839403/160293504-2bb2978b-1d18-481e-aa49-0980add85983.png)
+
+
+Compiling, Training, and Evaluating the Model
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+
+I selected a range of neurons, layers and activation functions for the model.  I did this based on prior work, experience and essentiall trial and error in an attempt to achieve 75% accuracy.
+
+The best results I was able to achieve were with the following:
+Hidden Nodes Layer 1 - 8
+Hidden Nodes Layer 2 - 5
+Layer 1 - relu
+Layer 2 - relu
+Output Layer - Sigmoid
+
+This model structure resulted in Loss of 0.54 and Accuracy: 73.9% 
+
+![image](https://user-images.githubusercontent.com/91839403/160293598-2f31770e-7e82-4fa6-ab9c-4d8dbb1b7a46.png)
+
+Were you able to achieve the target model performance?
+The closest I achieved was 73.9%
+
+What steps did you take to try and increase model performance?
+I changed bin cut offs in the model, tried multiple model configureations in the layers, a wide range of hidden layers in the nodes and dropped sn additioanl column to test if that was able to achieve the targeted 75%.  Non the the attempts were successful.
+
+### Summary: 
+The deeep learning model we created was able to achieve an accuracy of 73.9%.  It could be used in practice but additioanl optimization work should be performed.
+
+First: I would experiment with some basic machine learning models to evaluate performance and results with less complicated models.  This could help influence out thinking and validate the need for a Neural Network for this data at all.
+
+Second:  As a next step I would try adding a 3rd layer to assess if that drove an increase in the accuracy.  THe number of hidden layers seemed to have limited overall impact.  A thirrd layer with additional testing of activation functions at different layers would provide insight as to the impact on the accuracy of the model.
