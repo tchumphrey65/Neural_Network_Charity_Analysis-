@@ -83,8 +83,6 @@ Deliverable
 Despite multiple attempts I was never able to get the model to perform at 75% accuracy.
 
 The following techniques were applied throughout the various attempts at Optimization
-
-1)Adjusting the input data to ensure that there are no variables or outliers that are causing confusion in the model, such as:
 - Dropping more or fewer columns.
 - Creating more bins for rare occurrences in columns.
 - Increasing or decreasing the number of values for each bin.
