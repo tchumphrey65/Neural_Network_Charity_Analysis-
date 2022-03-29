@@ -53,7 +53,7 @@ Application Type and Classification were the two columns containing more than 10
 5. The model's weights are saved every 5 epochs.
 6. The results are saved to an HDF5 file.
 
-### Results Deloiverable 2
+### Results Deliverable 2
 1. The number of layers, the number of neurons per layer, and activation function are defined.
 2. An output layer with an activation function is created.
 
@@ -73,8 +73,15 @@ Application Type and Classification were the two columns containing more than 10
 
 6. The results are saved to an HDF5 file.
 (Stored in Git Hub repository under checkpoints folder)
+Renamed file to contain "AlphabetSoupCharity" In file name and saved iterations to main GitHub Folder"
+
 
 Deliverable 
+
+![image](https://user-images.githubusercontent.com/91839403/160658432-51e8b3cf-a9ba-44dc-a2c3-c78eff761d41.png)
+
+![image](https://user-images.githubusercontent.com/91839403/160658511-aecba136-13f5-44d3-bfe5-77298c1cc7df.png)
+
 
 ![image](https://user-images.githubusercontent.com/91839403/160292243-dc301575-ad0e-4efc-ad6b-b9f6db6b49a8.png)
 
